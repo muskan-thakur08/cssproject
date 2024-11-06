@@ -1,0 +1,64 @@
+.move{
+    animation: anime 15s infinite linear;
+}
+@keyframes anime{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-100%)
+    }
+}
+.text{
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+    display: inline-block;
+}
+
+.textMove{
+    animation: animation 4s infinite linear;
+}
+@keyframes animation {
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(calc(-100% - 12px))
+    }
+}
+.premierDesign::after{
+content: "©";
+position: absolute;
+top: 25%;
+right: 17%;
+font-size: 14px;
+font-weight: 400;
+}
+.premierDesign::before{
+content: "model management";
+position: absolute;
+bottom: 10%;
+right: 25%;
+font-size: 13px;
+letter-spacing: -1px;
+font-weight: 500;
+color: #666;
+}
+.premierDesignFooter::after{
+    content: "©";
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    font-size: 14px;
+    font-weight: 400;
+    }
+    .premierDesignFooter::before{
+    content: "model management";
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    font-size: 13px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    color: #666;
+    }
